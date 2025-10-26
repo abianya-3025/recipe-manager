@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Manager</h1>
+
+        <!-- Search bar -->
+        <input type="text" id="search" placeholder="Search recipes by name or ingredient">
+
+        <form id="recipe-form">
+            <input type="text" id="recipe-name" placeholder="Recipe Name" required>
+            <textarea id="recipe-ingredients" placeholder="Ingredients (comma separated)" required></textarea>
+            <textarea id="recipe-steps" placeholder="Steps (separate by line)" required></textarea>
+            <button type="submit">Add Recipe</button>
+        </form>
+
+        <h2>Recipes</h2>
+        <ul id="recipe-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
